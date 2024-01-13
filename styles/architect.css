@@ -13,13 +13,19 @@
     background: #FF900E;
     padding: 20px 24px;
     color: #FFF;
-cursor: pointer;
+    cursor: pointer;
     text-align: center;
 
     font-size: 1.25rem;
     border: 0;
     font-weight: 600;
 
+}
+
+/* main section */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
 }
 
 /* header styles */
@@ -69,26 +75,64 @@ nav li a {
     color: #131313;
     font-weight: 700px;
 }
+
 .banner img {
     margin-top: 20px;
     width: 100%;
 }
+
 /* responsive media wueries */
 /* mobilw devices */
-@media screen  and ( max-width:576px) {
-    header{
+@media screen and (max-width:576px) {
+    header {
         padding: 20px;
     }
+
     nav {
         flex-direction: column;
     }
 }
+
 /* tablet or mediam devices */
 @media screen and (min-width:576px) and (max-width:960px) {
-    header{
+    header {
         padding: 50px;
     }
+
     nav {
         flex-direction: column;
     }
+}
+
+/* team section start */
+.team-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.teams-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+ .teams-content {
+    padding-left: 76px;
+    /* padding-right: 70px; */
+} 
+
+.team-title {
+    font-size: 2.8rem;
+}
+
+.teams-title .quick-list {
+    color: #727272;
+    font-weight: 500;
+}
+
+.teams-title .text-features {
+    color: #FF900E;
+    font-weight: 700px;
 }
